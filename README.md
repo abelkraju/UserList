@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to your new ignited app!
 
 [![CircleCI](https://circleci.com/gh/infinitered/ignite.svg?style=svg)](https://circleci.com/gh/infinitered/ignite)
@@ -162,3 +163,7 @@ Follow our [Maestro Setup](https://ignitecookbook.com/docs/recipes/MaestroSetup)
 - [2018 aka Bowser](https://github.com/infinitered/ignite-bowser)
 - [2017 aka Andross](https://github.com/infinitered/ignite-andross)
 - [2016 aka Ignite 1.0](https://github.com/infinitered/ignite-ir-boilerplate-2016)
+=======
+# UserList
+User Explorer is a mobile application built with React Native and Expo. It fetches and displays a list of users from the DummyJSON API, allowing users to view a list of posts by each user. The app features infinite scrolling, optimized performance, and a user-friendly interface.
+>>>>>>> 7dd5839a5e79f83fb1792a3c0862128919ecd7e3
