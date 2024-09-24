@@ -1,9 +1,7 @@
 {
-  "name": "UserExplorer",
-  "displayName": "UserExplorer",
   "expo": {
     "name": "UserExplorer",
-    "slug": "UserExplorer",
+    "slug": "userexplorer",
     "scheme": "userexplorer",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -70,9 +68,11 @@
     ],
     "experiments": {
       "tsconfigPaths": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4f477b50-3a49-4317-b92c-fb3dc1031ec8"
+      }
     }
-  },
-  "ignite": {
-    "version": "9.10.0"
   }
 }
