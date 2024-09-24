@@ -1,169 +1,92 @@
-<<<<<<< HEAD
-# Welcome to your new ignited app!
+# User Explorer
 
-[![CircleCI](https://circleci.com/gh/infinitered/ignite.svg?style=svg)](https://circleci.com/gh/infinitered/ignite)
+![Expo](https://img.shields.io/badge/Expo-^51.0.8-blue)
+![React Native](https://img.shields.io/badge/React%20Native-0.74.5-blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/abelkraju/User_Explorer)
 
-## The latest and greatest boilerplate for Infinite Red opinions
+## Project Description
 
-This is the boilerplate that [Infinite Red](https://infinite.red) uses as a way to test bleeding-edge changes to our React Native stack.
-
-Currently includes:
-
-- React Native
-- React Navigation
-- MobX State Tree
-- TypeScript
-- And more!
-
-## Quick Start
-
-The Ignite boilerplate project's structure will look similar to this:
-
-```
-ignite-project
-├── app
-│   ├── components
-│   ├── config
-│   ├── i18n
-│   ├── models
-│   ├── navigators
-│   ├── screens
-│   ├── services
-│   ├── theme
-│   ├── utils
-│   └── app.tsx
-├── assets
-│   ├── icons
-│   └── images
-├── test
-│   ├── __snapshots__
-│   ├── mockFile.ts
-│   └── setup.ts
-├── README.md
-├── android
-│   ├── app
-│   ├── build.gradle
-│   ├── gradle
-│   ├── gradle.properties
-│   ├── gradlew
-│   ├── gradlew.bat
-│   ├── keystores
-│   └── settings.gradle
-├── ignite
-│   └── templates
-|       |── app-icon
-│       ├── component
-│       ├── model
-│       ├── navigator
-│       └── screen
-├── index.js
-├── ios
-│   ├── IgniteProject
-│   ├── IgniteProject-tvOS
-│   ├── IgniteProject-tvOSTests
-│   ├── IgniteProject.xcodeproj
-│   └── IgniteProjectTests
-├── .env
-└── package.json
-
-```
-
-### ./app directory
-
-Included in an Ignite boilerplate project is the `app` directory. This is a directory you would normally have to create when using vanilla React Native.
-
-The inside of the `app` directory looks similar to the following:
-
-```
-app
-├── components
-├── config
-├── i18n
-├── models
-├── navigators
-├── screens
-├── services
-├── theme
-├── utils
-└── app.tsx
-```
-
-**components**
-This is where your reusable components live which help you build your screens.
-
-**i18n**
-This is where your translations will live if you are using `react-native-i18n`.
-
-**models**
-This is where your app's models will live. Each model has a directory which will contain the `mobx-state-tree` model file, test file, and any other supporting files like actions, types, etc.
-
-**navigators**
-This is where your `react-navigation` navigators will live.
-
-**screens**
-This is where your screen components will live. A screen is a React component which will take up the entire screen and be part of the navigation hierarchy. Each screen will have a directory containing the `.tsx` file, along with any assets or other helper files.
-
-**services**
-Any services that interface with the outside world will live here (think REST APIs, Push Notifications, etc.).
-
-**theme**
-Here lives the theme for your application, including spacing, colors, and typography.
-
-**utils**
-This is a great place to put miscellaneous helpers and utilities. Things like date helpers, formatters, etc. are often found here. However, it should only be used for things that are truly shared across your application. If a helper or utility is only used by a specific component or model, consider co-locating your helper with that component or model.
-
-**app.tsx** This is the entry point to your app. This is where you will find the main App component which renders the rest of the application.
-
-### ./assets directory
-
-This directory is designed to organize and store various assets, making it easy for you to manage and use them in your application. The assets are further categorized into subdirectories, including `icons` and `images`:
-
-```
-assets
-├── icons
-└── images
-```
-
-**icons**
-This is where your icon assets will live. These icons can be used for buttons, navigation elements, or any other UI components. The recommended format for icons is PNG, but other formats can be used as well.
-
-Ignite comes with a built-in `Icon` component. You can find detailed usage instructions in the [docs](https://github.com/infinitered/ignite/blob/master/docs/Components-Icon.md).
-
-**images**
-This is where your images will live, such as background images, logos, or any other graphics. You can use various formats such as PNG, JPEG, or GIF for your images.
-
-Another valuable built-in component within Ignite is the `AutoImage` component. You can find detailed usage instructions in the [docs](https://github.com/infinitered/ignite/blob/master/docs/Components-AutoImage.md).
-
-How to use your `icon` or `image` assets:
-
-```
-import { Image } from 'react-native';
-
-const MyComponent = () => {
-  return (
-    <Image source={require('../assets/images/my_image.png')} />
-  );
-};
-```
-
-### ./ignite directory
-
-The `ignite` directory stores all things Ignite, including CLI and boilerplate items. Here you will find templates you can customize to help you get started with React Native.
-
-### ./test directory
-
-This directory will hold your Jest configs and mocks.
-
-## Running Maestro end-to-end tests
-
-Follow our [Maestro Setup](https://ignitecookbook.com/docs/recipes/MaestroSetup) recipe from the [Ignite Cookbook](https://ignitecookbook.com/)!
-
-## Previous Boilerplates
-
-- [2018 aka Bowser](https://github.com/infinitered/ignite-bowser)
-- [2017 aka Andross](https://github.com/infinitered/ignite-andross)
-- [2016 aka Ignite 1.0](https://github.com/infinitered/ignite-ir-boilerplate-2016)
-=======
-# UserList
 User Explorer is a mobile application built with React Native and Expo. It fetches and displays a list of users from the DummyJSON API, allowing users to view a list of posts by each user. The app features infinite scrolling, optimized performance, and a user-friendly interface.
->>>>>>> 7dd5839a5e79f83fb1792a3c0862128919ecd7e3
+
+## Features
+
+- Fetches and displays a list of users from the DummyJSON API.
+- Allows users to view posts by each user.
+- Infinite scrolling to load more users and posts.
+- Optimized rendering for smooth performance.
+- Built with Expo and React Native for cross-platform compatibility.
+
+## Screenshots
+
+| User List Screen                         | User Posts Screen                         |
+| ---------------------------------------- | ----------------------------------------- |
+| <img src="screenshots/Userlist.jpg" alt="User List Screen" width="300"/> | <img src="screenshots/UserPost.jpg" alt="User Posts Screen" width="300"/> |
+
+## Technology Stack
+
+- **Frontend:** React Native, Expo
+- **State Management:** MobX-State-Tree
+- **Networking:** Axios
+- **Navigation:** React Navigation
+- **UI Components:** React Native Gesture Handler, React Native Reanimated
+
+## Installation Instructions
+
+### A. Setting Up the Project Locally
+
+Follow these steps to set up the User Explorer project on your local machine:
+
+1. **Clone the Repository**
+   
+   ```bash
+   git clone https://github.com/abelkraju/User_Explorer.git
+   
+2. ### Navigate to the Project Directory
+
+   ```bash
+     cd User_Explorer
+
+3. ### Install Dependencies
+
+   Make sure you have [Node.js](https://nodejs.org/) installed on your machine. Then, install the project dependencies using npm:
+
+    ```bash
+      npm install
+4. ### Set Up Expo CLI
+
+   If you don't have Expo CLI installed globally, install it using npm:
+
+    ```bash
+      npm install -g expo-cli
+5. ### Run the Project
+
+   Start the development server using Expo:
+
+    ```bash
+      npm start
+6. ### Use the Expo Go App
+
+   Use the Expo Go app on your mobile device to scan the QR code and run the app.
+
+   You can also run the app on an Android emulator or iOS simulator using the respective commands:
+
+    ```bash
+      npm run android
+      npm run ios
+B. **Downloading the App from GitHub Release**
+
+To download and install the User Explorer app on your Android device:
+
+**Go to the Releases Page**
+
+- Visit the [Releases](https://github.com/abelkraju/User_Explorer/releases) page of the repository.
+
+**Download the App Bundle**
+
+- Find the latest release (v1.0.0) and download the AAB file named `UserExplorer-v1.0.0`.
+
+
+
+
+    
+    
